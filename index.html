@@ -38,6 +38,8 @@ body { margin: 0; padding: 0; }
         zoom: 15
     });
 
+    map.addControl(new mapboxgl.FullscreenControl());
+
     // Create a default Marker and add it to the map.
     const marker1 = new mapboxgl.Marker()
         .setLngLat([longitude, latitude])
